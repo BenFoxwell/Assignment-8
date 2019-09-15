@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="The perfect personal assistant. Relaxr does your job for you so you can enjoy life as it is meant to be.">
+
+		<title>Relaxr Blog</title>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,600,800' rel='stylesheet' type='text/css'>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<h1 class="logo">Relaxr</h1>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="register.html">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<section id="main">
+			<div class="container">
+				<section id="contact">
+					<form action="register.php" method="post" enctype="multipart/form-data">
+						<h1>Send us a message</h1>
+						<h5 class="heading">We usually respond within 1 business day.</h5>
+						
+						<h4>General Info</h4>
+						<p>Name*</p>
+						<input type="text" name="firstName" placeholder="Your Name" required>
+						<p>Email*</p>
+						<input type="email" placeholder="name@mydomain.com" required>
+						<p>Company</p>
+						<input type="text" name="company" placeholder="Acme Inc.">
+						<p>How did you hear about us?</p>
+						<input type="text" name="hearOfUs" placeholder="Event">
+						<p>What would you like to discuss?</p>
+						<input type="radio" id="hiring" name="discuss" value="Hiring Philosiphie" checked>Hiring Philosiphie
+						<input type="radio" id="joining" name="discuss" value="Joining the Philosiphie team">Joining the Philosiphie team
+						<input type="radio" id="other" name="discuss" value="Other">Other
+						
+						<h4>Project Info</h4>
+						<p>Which of our offerings interest you?</p>
+						<input type="checkbox" id="lean" name="offerings" value="Lean Branding">Lean Branding
+						<input type="checkbox" id="mvp" name="offerings" value="4 Week MVP">4 Week MVP
+						<input type="checkbox" id="product" name="offerings" value="Product Team">Product Team
+						<input type="checkbox" id="design" name="offerings" value="Design Sprint">Design Sprint
+						<input type="checkbox" id="other" name="offerings" value="Other">Other
+						<p>What is the problem you are trying to solve?</p>
+						<textarea name="problem" placeholder="Enter your comments/feedback here"></textarea>
+						<p>What do you hope our engagement will accomplish?</p>
+						<textarea name="hope" placeholder="Enter your comments/feedback here"></textarea>
+						<p>What is your budget range?</p>
+						<input type="radio" id="less40" name="budget" value="less than $40K" checked>Less than $40K
+						<input type="radio" id="forty" name="budget" value="$40K-$100K">$40K-$100K
+						<input type="radio" id="hundred" name="budget" value="$100K-$250K">$100K-$250K
+						<input type="radio" id="twoFit" name="budget" value="$250K-$500K">$250K-$500K
+						<input type="radio" id="five" name="budget" value="$500K+">$500K+
+						<hr>
+						<input type="submit" value="Submit">
+					</form>
+				</section>
+			</div>
+		</section>
+
+		<footer>
+			<h4 class="logo">Relaxr</h4>
+
+			<ul>
+				<li><a href="#"><img src="images/twitter.png" alt="Twitter logo"></a></li>
+				<li><a href="#"><img src="images/facebook.png" alt="Facebook logo"></a></li>
+			</ul>
+
+			<p class="copyright">Copyright 2015. Relaxr.</p>
+		</footer>
+	</body>
+</html>
